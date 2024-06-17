@@ -3,12 +3,6 @@
 
 # COMMAND ----------
 
-# MAGIC %pip install /dbfs/home/andre.mesarovic@databricks.com/lib/wheels/mlflow_export_import-1.2.0-py3-none-any.whl
-
-# MAGIC
-
-# COMMAND ----------
-
 import mlflow
 print("mlflow.version:", mlflow.__version__)
 
