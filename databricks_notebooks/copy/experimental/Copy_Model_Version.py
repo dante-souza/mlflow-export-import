@@ -53,7 +53,11 @@
 
 # COMMAND ----------
 
-# MAGIC %pip install git+https:///github.com/mlflow/mlflow-export-import/#egg=mlflow-export-import --force-reinstall
+# MAGIC %pip install mlflow-export-import==1.2.0
+
+# COMMAND ----------
+
+dbutils.library.restartPython()
 
 # COMMAND ----------
 
