@@ -53,7 +53,7 @@
 
 # COMMAND ----------
 
-# MAGIC %pip install mlflow-export-import==1.2.0
+# %pip install mlflow-export-import==1.2.0
 
 # COMMAND ----------
 

@@ -1,5 +1,6 @@
 # Databricks notebook source
 # %pip install git+https:///github.com/mlflow/mlflow-export-import/#egg=mlflow-export-import --force-reinstall
+%pip install /Volumes/machine_learning_dev/models/files/mlflow_export_import-1.2.0-py3-none-any.whl
 # %pip install numpy==1.26.4 --force-reinstall
 
 # COMMAND ----------

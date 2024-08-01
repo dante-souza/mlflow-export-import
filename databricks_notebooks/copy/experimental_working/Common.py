@@ -3,8 +3,13 @@
 
 # COMMAND ----------
 
+# MAGIC %sh
+# MAGIC ls /Volumes/machine_learning_prd/models/files
+
+# COMMAND ----------
+
 #%pip install /dbfs/home/andre.mesarovic@databricks.com/lib/wheels/mlflow_export_import-1.2.0-py3-none-any.whl
-%pip install /Volumes/machine_learning_dev/models/files/mlflow_export_import-1.2.0-py3-none-any.whl
+%pip install /Volumes/machine_learning_prd/models/files/mlflow_export_import-1.2.0-py3-none-any.whl
 
 
 # COMMAND ----------
