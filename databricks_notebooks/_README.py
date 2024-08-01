@@ -29,21 +29,21 @@
 # MAGIC ##### Notebooks
 # MAGIC * [Single notebooks]($single/_README) - Copy one MLflow object from one tracking server (workspace) to another.
 # MAGIC * [Bulk notebooks]($bulk/_README) - Copy multiple MLflow objects. The target object name will be the same as the source object name.
-# MAGIC * [Copy notebooks]($copy/_README) - Directly copy a model version or run using a temp directory as intermediate.
+# MAGIC * [Copy notebooks]($copy/_README) - Directly copy a model version or run using a temp directory as intermediate instead of an explicit intermediate storage location.
+# MAGIC * [Tools notebooks]($tools/_README) - Additional tools such as model signature notebooks.
 # MAGIC
 # MAGIC #### Limitations
 # MAGIC
 # MAGIC * [General limitations](https://github.com/mlflow/mlflow-export-import/blob/master/README_limitations.md#general-limitations)
 # MAGIC * [Databricks limitations](https://github.com/mlflow/mlflow-export-import/blob/master/README_limitations.md#databricks-limitations)
 # MAGIC
-# MAGIC ##### [Console Script]($scripts/_README) notebooks - experimental
+# MAGIC #### Experimental
+# MAGIC
+# MAGIC ##### [Console Script]($scripts/_README) notebooks
 # MAGIC * Command-line scripts using the Linux shell (%sh).
 # MAGIC * [Console_Scripts]($scripts/Console_Scripts) 
 # MAGIC
 # MAGIC #### Databricks internal
 # MAGIC * [MLflow Export Import](https://databricks.atlassian.net/wiki/spaces/UN/pages/800754006/MLflow+Export+Import) - Wiki page.
 # MAGIC
-
-# COMMAND ----------
-
-# MAGIC %md ##### Last updated: _2024-02-05_
+# MAGIC ##### Last updated: _2024-07-03_
