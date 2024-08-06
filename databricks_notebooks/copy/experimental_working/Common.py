@@ -3,8 +3,8 @@
 
 # COMMAND ----------
 
-# MAGIC %sh
-# MAGIC ls /Volumes/machine_learning_prd/models/files
+# %sh
+# ls /Volumes/machine_learning_prd/models/files
 
 # COMMAND ----------
 
@@ -88,3 +88,9 @@ def copy_model_version(
         copy_lineage_tags = copy_lineage_tags,
         verbose = verbose 
     )
+
+# COMMAND ----------
+
+# MAGIC %environment
+# MAGIC "client": "1"
+# MAGIC "base_environment": ""
