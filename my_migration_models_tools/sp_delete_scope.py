@@ -36,9 +36,3 @@ delete_status = response.status_code
 print(delete_status)
 dbutils.notebook.exit(f"Deleted scope gcp_mlflow_dev status: {delete_status}")
 
-
-# COMMAND ----------
-
-# MAGIC %environment
-# MAGIC "client": "1"
-# MAGIC "base_environment": ""

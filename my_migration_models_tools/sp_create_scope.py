@@ -110,9 +110,3 @@ response = requests.request("POST", url, headers=headers, data=payload)
 
 print(response.status_code)
 
-
-# COMMAND ----------
-
-# MAGIC %environment
-# MAGIC "client": "1"
-# MAGIC "base_environment": ""

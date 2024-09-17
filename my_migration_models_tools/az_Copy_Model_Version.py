@@ -57,7 +57,7 @@
 
 # COMMAND ----------
 
-# MAGIC %run ./create_scope
+# MAGIC %run ./az_create_scope
 
 # COMMAND ----------
 
@@ -193,17 +193,18 @@ def copy_model_version(
 
 
 # criar o scope do gcp_dev aqui
-registry_uri_GCP_DEV = "databricks://gcp_mlflow_dev:mlflow_dev_gcp"
+# registry_uri_GCP_DEV = "databricks://gcp_mlflow_dev:mlflow_dev_gcp"
+registry_uri_AZ_DEV = "databricks://az_mlflow_dbswks:az_dbswks"
 
-src_run_workspace = registry_uri_GCP_DEV
+src_run_workspace = registry_uri_AZ_DEV
 
 
-src_model_name = "ltv_receita"
-src_model_version = 10
+src_model_name = "crm_aov"
+src_model_version = 2
 
-dst_model_name = src_model_name
+dst_model_name = f"{src_model_name}_azdev"
 # dst_model_name = "modelos_collection_ciclo_curto_4"
-dst_experiment_name = f"dbfs:/Volumes/machine_learning_prd/models/files/models/artifacts/{src_model_name}"
+dst_experiment_name = f"dbfs:/Volumes/machine_learning_prd/models/files/models/artifacts/{dst_model_name}"
 # dst_experiment_name = f"/Users/dante.souza@viavarejo.com.br/{src_model_name}"
 
 
@@ -242,7 +243,7 @@ src_model_version, dst_model_version = copy_model_version(
 
 # COMMAND ----------
 
-# MAGIC %run ./delete_scope
+# MAGIC %run ./az_delete_scope
 
 # COMMAND ----------
 
@@ -284,9 +285,3 @@ if return_result:
 # COMMAND ----------
 
 
-
-# COMMAND ----------
-
-# MAGIC %environment
-# MAGIC "client": "1"
-# MAGIC "base_environment": ""
